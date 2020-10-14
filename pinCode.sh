@@ -4,9 +4,9 @@ echo "Welcome to Postal pincode program"
 
 read -p "Enter Pincode:" pincode
 
-#NO alphabet at starting
+#NO alphabet at end
 
-pincodepattern="^[0-9]{6}"
+pincodepattern="^[0-9]{6}$"
 
 if [[ $pincode =~ $pincodepattern ]]
 then
